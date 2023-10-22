@@ -4,6 +4,8 @@ const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
+const fonter = require('gulp-fonter');
+const ttf2woff2 = require('gulp-ttf2woff2');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 
@@ -14,48 +16,59 @@ function browsersync() {
         },
         notify: false,   //відключає повідомлення
         browser: 'chrome'
-    });    
+    });
+}
+
+function fonts() {
+    return src('app/fonts/src/*.*')
+        .pipe(fonter({
+            formats: ['woff', 'ttf']
+        }))
+        .pipe(src('app/fonts/*.ttf'))
+        .pipe(ttf2woff2())
+        .pipe(dest('app/fonts'))
 }
 
 function styles() {
-return src('app/scss/style.scss')
-    //pipe - дія яку необхідно виконати
-    .pipe(scss({ outputStyle: 'compressed' }))   //зтискає scss
-    .pipe(concat('style.min.css'))  //конкатинація повертає необхідний файл
-    .pipe(autoprefixer({    //автопрефіксер для браузера
-        overrideBrowserslist: ['last 10 versions'],
-        grid: true
-    }))
-    .pipe(dest('app/css'))  //обирає папку в яку поміщається файл 
-    .pipe(browserSync.stream())
+    return src('app/scss/style.scss')
+        //pipe - дія яку необхідно виконати
+        .pipe(scss({ outputStyle: 'compressed' }))   //зтискає scss
+        .pipe(concat('style.min.css'))  //конкатинація повертає необхідний файл
+        .pipe(autoprefixer({    //автопрефіксер для браузера
+            overrideBrowserslist: ['last 10 versions'],
+            grid: true
+        }))
+        .pipe(dest('app/css'))  //обирає папку в яку поміщається файл 
+        .pipe(browserSync.stream())
 }
 
 function scripts() {    //скрипти js
     return src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/rateyo/src/jquery.rateyo.js',
         'app/js/main.js'
     ])
-    .pipe(concat('main.min.js'))    //об'єднання в один файл
-    .pipe(uglify())
-    .pipe(dest('app/js'))
-    .pipe(browserSync.stream())    
+        .pipe(concat('main.min.js'))    //об'єднання в один файл
+        .pipe(uglify())
+        .pipe(dest('app/js'))
+        .pipe(browserSync.stream())
 }
 
 function images() {
     return src('app/images/**/*.*')
-    .pipe(imagemin([
-        imagemin.gifsicle({ interlaced: true }),
-        imagemin.mozjpeg({ quality: 75, progressive: true }),
-        imagemin.optipng({ optimizationLevel: 5 }),
-        imagemin.svgo({
-            plugins: [
-                { removeViewBox: true },
-                { cleanupIDs: false }
-            ]
-        })
-    ]))
-    .pipe(dest('dist/images'))    
+        .pipe(imagemin([
+            imagemin.gifsicle({ interlaced: true }),
+            imagemin.mozjpeg({ quality: 75, progressive: true }),
+            imagemin.optipng({ optimizationLevel: 5 }),
+            imagemin.svgo({
+                plugins: [
+                    { removeViewBox: true },
+                    { cleanupIDs: false }
+                ]
+            })
+        ]))
+        .pipe(dest('dist/images'))
 }
 
 function watching() {    //функція спостереження за проектом
@@ -66,23 +79,25 @@ function watching() {    //функція спостереження за про
 
 function build() {  //білд що формує папку dist
     return src([
-        'app/**/*.html',
         'app/css/style.min.css',
-        'app/js/main.min.js'
-    ], {base: 'app'})    
-    .pipe(dest('dist'))
+        'app/js/main.min.js',
+        'app/fonts/*,*',
+        'app/**/*.html'
+    ], { base: 'app' })
+        .pipe(dest('dist'))
 }
 
 function cleanDist() {  //видаляє все з папки dist
-    return del('dist')    
+    return del('dist')
 }
 
 exports.styles = styles;    //необідно для запуску функції
 exports.scripts = scripts;
+exports.fonts = fonts;
 exports.browsersync = browsersync;
 exports.watching = watching;    //пишеться нижче всіх функції за якими спостерігає
 exports.images = images;
 exports.cleanDist = cleanDist;
 
-exports.build = series( cleanDist, images, build);  //сувора послідовність дій
-exports.default = parallel( styles, scripts, browsersync, watching);    //дефолт запуск gulp
+exports.build = series(cleanDist, images, build);  //сувора послідовність дій
+exports.default = parallel(styles, scripts, browsersync, watching);    //дефолт запуск gulp
