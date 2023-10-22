@@ -1,0 +1,52 @@
+$accent: #71b3c6;
+$title: #264a51;
+$text: #335E74;
+$bg: #F3F3F3;
+$tab: #748289;
+
+%DancingScript-700 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+%Dosis-800 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+}
+
+%Dosis-600 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+}
+
+%Mukta-400 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+}
+
+%Mukta-500 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 500;
+}
+
+%Mukta-700 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 700;
+}
+
+%btn {
+    padding: 8px 18px;
+    border-radius: 3px;
+    border: 1.5px solid #43717d;
+    color: #43717d;
+    letter-spacing: 0.675px;
+    font-size: 15px;
+    transition: 0.4s;
+    &:hover,
+    &:focus {
+        border-color: #43717d;
+        color: #fff;
+        box-shadow: inset 10em 0 0 0 #43717d;
+    }
+}
+

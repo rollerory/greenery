@@ -3,6 +3,7 @@
 @import "reset";
 @import "global";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/rateyo/src/jquery.rateyo";
 
 .header {
     height: 100vh;
@@ -26,11 +27,11 @@
         z-index: 10;
     }
     &__top-btn {
+        @extend %Mukta-700;
         border: none;
         background-color: transparent;
         font-size: 16px;
-        line-height: 26px; /* 162.5% */
-        letter-spacing: -0.64px;
+        line-height: 26px;
         color: #3e5860;
         cursor: pointer;
     }
@@ -141,6 +142,7 @@
         height: 100%;
         width: 165px;
         padding: 20px;
+        @extend %Mukta-400;
         svg {
             display: block;
         }
@@ -182,10 +184,6 @@
     }
     &__item-subtitle {
         margin-bottom: 9px;
-        font-size: 20px;
-        letter-spacing: 0.9px;
-        line-height: 152.5%; /* 30.5px */
-        color: #4e6e77;
     }
     &__item-title {
         font-size: 50px;
@@ -193,6 +191,10 @@
         line-height: 133.5%; /* 66.75px */
         color: #264a51;
         margin-bottom: 20px;
+        @extend %Dosis-600;
+    }
+    &__item-btn {
+        @extend %btn;
     }
     &__item-expect {
         position: absolute;
@@ -235,9 +237,9 @@
     li {
         margin-right: 10px;
         width: 14px;
-            height: 14px;
+        height: 14px;
         button {
-            border: 1px solid #677F8B;
+            border: 1px solid #677f8b;
             border-radius: 50%;
             background-color: transparent;
             color: transparent;
@@ -252,8 +254,197 @@
 }
 
 .slick-active {
-    background-color: #677F8B;
+    background-color: #677f8b;
     border-radius: 50%;
+}
+
+.companies {
+    padding: 30px 0;
+    background-color: #d2e2ee;
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.products {
+    padding: 92px 0 114px;
+    background-color: $bg;
+}
+
+.products__title {
+    padding-bottom: 26px;
+}
+
+.products-tabs {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 28px;
+    }
+    &__top-item a {
+        font-size: 17px;
+        letter-spacing: 0.765px;
+        color: $tab;
+    }
+    &__top-item--active {
+        border-radius: 2px;
+        border: 2px solid #3e5860;
+        padding: 5px 20px 2px;
+        a {
+            @extend %Mukta-500;
+            font-size: 17px;
+            line-height: 1.2;
+            color: $title;
+        }
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+    &__img-box {
+        position: relative;
+        width: 350px;
+        height: 316px;
+        border-radius: 3px;
+        background-color: #f1f6f9;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
+    }
+    &__img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        transform: translateY(50%);
+        object-fit: none;
+    }
+    &__link-box {
+        position: absolute;
+        display: flex;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: space-between;
+        width: 200px;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        width: 38px;
+        height: 38px;
+        background-color: $accent;
+        cursor: pointer;
+        .products-tabs__added {
+            display: none;
+        }
+    }
+    &__out {
+        display: none;
+    }
+    &__sale {
+        display: none;
+    }
+    &__title,
+    &__price {
+        @extend %Mukta-400;
+        line-height: 133.5%; /* 20.025px */
+        letter-spacing: 0.675px;
+        display: flex;
+        justify-content: center;
+        color: $title;
+    }
+    &__title {
+        margin-top: 12px;
+    }
+    &__star {
+        margin: 0 auto;
+    }
+}
+
+// .jq-ry-normal-group svg{
+//     fill: $bg;
+// }
+
+
+.products-tabs__link--active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 38px;
+    height: 38px;
+    background-color: $accent;
+    cursor: pointer;
+    .products-tabs__no-added {
+        display: none;
+    }
+    .products-tabs__added {
+        display: block;
+    }
+}
+
+.products-tabs__item--sale {
+    .products-tabs__sale {
+        @extend %Mukta-500;
+        font-size: 12px;
+        line-height: 172.682%; /* 20.722px */
+        letter-spacing: 0.54px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 30px;
+        right: 18px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background-color: $title;
+        color: #fff;
+    }
+}
+
+.products-tabs__item--new {
+    .products-tabs__img-box::after {
+        content: "New";
+        position: absolute;
+        top: 82px;
+        right: 18px;
+        @extend %Mukta-500;
+        font-size: 12px;
+        line-height: 172.682%; /* 20.722px */
+        letter-spacing: 0.54px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background-color: $accent;
+        color: #fff;
+        z-index: 10;
+    }
+}
+
+.products-tabs__item--out {
+    position: relative;
+    .products-tabs__out {
+        @extend %Mukta-500;
+        font-size: 12px;
+        line-height: 172.682%;
+        letter-spacing: 0.54px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 160px;
+        padding: 7px 6px 6px 6px;
+        background-color: $title;
+        color: #fff;
+    }
 }
 
 @import "media";
