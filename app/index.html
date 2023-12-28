@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -41,14 +42,14 @@
                     <!-- slider item 1 -->
                     <div class="slider__item" style="background-image: url('images/slider/1.jpg');">
                         <div class="slider__item-content">
-                            <img class="slider__item-subtitle" src="images/icons/save-the-weekend.svg"
+                            <img class="slider__item-subtitle wow animate__fadeIn" src="images/icons/save-the-weekend.svg"
                                 alt="save your weekend">
-                            <h2 class="slider__item-title">
+                            <h2 class="slider__item-title wow animate__fadeIn">
                                 Awesome design
                                 Best Furniture For
                                 Your Interior.
                             </h2>
-                            <a href="#" class="btn slider__item-btn">
+                            <a href="#" class="btn slider__item-btn wow animate__fadeInLeftBig">
                                 Explore More
                             </a>
                             <div class="slider__item-expect">
@@ -105,8 +106,8 @@
 
         <!-- side header menu -->
         <div class="header__side-menu">
-            <a href="#" class="logo">
-                <img src="images/logo.png" alt="greenery logo">
+            <a href="#" class="header__logo">
+                <img src="images/icons/logo-white.svg" alt="greenery logo">
             </a>
 
             <!-- side header menu list -->
@@ -244,33 +245,20 @@
 
             <div class="products-tabs">
 
-                <!-- product tabs switcher -->
+                <!-- tabs top -->
                 <div class="products-tabs__top">
-                    <div class="products-tabs__top-item--active">
-                        <a class="products-tabs__top-link" href="#">Single Sofa</a>
-                    </div>
-                    <div class="products-tabs__top-item">
-                        <a class="products-tabs__top-link" href="#">Living Room</a>
-                    </div>
-                    <div class="products-tabs__top-item">
-                        <a class="products-tabs__top-link" href="#">Kitchen</a>
-                    </div>
-                    <div class="products-tabs__top-item">
-                        <a class="products-tabs__top-link" href="#">Bed Room</a>
-                    </div>
-                    <div class="products-tabs__top-item">
-                        <a class="products-tabs__top-link" href="#">Bath Room</a>
-                    </div>
-                    <div class="products-tabs__top-item">
-                        <a class="products-tabs__top-link" href="#">Decorations</a>
-                    </div>
-                    <div class="products-tabs__top-item">
-                        <a class="products-tabs__top-link" href="#">Ceramics</a>
-                    </div>
+                    <a class="products-tabs__top-item products-tabs__top-item--active" href="#SingleSofa">Single
+                        Sofa</a>
+                    <a class="products-tabs__top-item" href="#LivingRoom">Living Room</a>
+                    <a class="products-tabs__top-item" href="#Kitchen">Kitchen</a>
+                    <a class="products-tabs__top-item" href="#BedRoom">Bed Room</a>
+                    <a class="products-tabs__top-item" href="#BathRoom">Bath Room</a>
+                    <a class="products-tabs__top-item" href="#Decorations">Decorations</a>
+                    <a class="products-tabs__top-item" href="#Keramics">Keramics</a>
                 </div>
 
                 <!-- products -->
-                <div class="products-tabs__content">
+                <div id="SingleSofa" class="products-tabs__content products-tabs__content--active">
 
                     <!-- 1 -->
                     <div class="products-tabs__item products-tabs__item--sale products-tabs__item--new">
@@ -288,7 +276,8 @@
                                     <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
                                 </button>
                                 <button class="products-tabs__link">
-                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg" alt="cart icon">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
                                     <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
                                 </button>
                             </div>
@@ -316,7 +305,8 @@
                                     <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
                                 </button>
                                 <button class="products-tabs__link">
-                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg" alt="cart icon">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
                                     <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
                                 </button>
                             </div>
@@ -325,7 +315,7 @@
                         <div class="products-tabs__sale">-20%</div>
                         <div class="products-tabs__title">Single Sofa</div>
                         <div class="products-tabs__price">£423.00</div>
-                        <div class="star"></div>
+                        <div class="products-tabs__star" data-rateyo-rating="5"></div>
                     </div>
 
                     <!-- 3 -->
@@ -344,7 +334,8 @@
                                     <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
                                 </button>
                                 <button class="products-tabs__link">
-                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg" alt="cart icon">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
                                     <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
                                 </button>
                             </div>
@@ -353,7 +344,7 @@
                         <div class="products-tabs__sale">-20%</div>
                         <div class="products-tabs__title">Single Sofa</div>
                         <div class="products-tabs__price">£423.00</div>
-                        <div class="star"></div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
                     </div>
 
                     <!-- 4 -->
@@ -372,7 +363,8 @@
                                     <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
                                 </button>
                                 <button class="products-tabs__link">
-                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg" alt="cart icon">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
                                     <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
                                 </button>
                             </div>
@@ -381,7 +373,7 @@
                         <div class="products-tabs__sale">-20%</div>
                         <div class="products-tabs__title">Single Sofa</div>
                         <div class="products-tabs__price">£423.00</div>
-                        <div class="star"></div>
+                        <div class="products-tabs__star" data-rateyo-rating="3"></div>
                     </div>
 
                     <!-- 5 -->
@@ -400,50 +392,1320 @@
                                     <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
                                 </button>
                                 <button class="products-tabs__link">
-                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg" alt="cart icon">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
                                     <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
                                 </button>
                             </div>
                         </div>
                         <div class="products-tabs__out">Out of stoke</div>
-                        <div class="products-tabs__sale">-40%</div>
+                        <div class="products-tabs__sale">-30%</div>
                         <div class="products-tabs__title">Single Sofa</div>
                         <div class="products-tabs__price">£423.00</div>
-                        <div class="star"></div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
                     </div>
 
                     <!-- 6 -->
-                <div class="products-tabs__item products-tabs__item--out">
-                    <div class="products-tabs__img-box">
-                        <img src="images/product/6.png" alt="product img" class="products-tabs__img">
-                        <div class="products-tabs__link-box">
-                            <button class="products-tabs__link">
-                                <img src="images/icons/zoom.svg" alt="zoom icon">
-                            </button>
-                            <button class="products-tabs__link" type="button">
-                                <img src="images/icons/stat.svg" alt="stat icon">
-                            </button>
-                            <button class="products-tabs__link">
-                                <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
-                                <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
-                            </button>
-                            <button class="products-tabs__link">
-                                <img class="products-tabs__no-added" src="images/icons/item-cart.svg" alt="cart icon">
-                                <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
-                            </button>
+                    <div class="products-tabs__item products-tabs__item--out">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/6.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon"> \
+                                </button>
+                            </div>
                         </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="5"></div>
                     </div>
-                    <div class="products-tabs__out">Out of stoke</div>
-                    <div class="products-tabs__sale">-20%</div>
-                    <div class="products-tabs__title">Single Sofa</div>
-                    <div class="products-tabs__price">£423.00</div>
-                    <div class="star"></div>
                 </div>
 
+                <!-- LivingRoom tab -->
+                <div id="LivingRoom" class="products-tabs__content">
+
+                    <!-- 1 -->
+                    <div class="products-tabs__item products-tabs__item--sale products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/5.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="products-tabs__item products-tabs__item--out products-tabs__item--sale">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/3.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="products-tabs__item products-tabs__item--sale products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/1.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="products-tabs__item products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/6.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="products-tabs__item products-tabs__item--sale">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/5.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-30%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="products-tabs__item products-tabs__item--out">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/4.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon"> \
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+                </div>
+
+                <!-- Kitchen tab -->
+                <div id="Kitchen" class="products-tabs__content">
+
+                    <!-- 1 -->
+                    <div class="products-tabs__item products-tabs__item--sale products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/6.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="products-tabs__item products-tabs__item--out products-tabs__item--sale">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/4.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="products-tabs__item products-tabs__item--sale products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/3.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="products-tabs__item products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/2.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="products-tabs__item products-tabs__item--sale">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/5.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-30%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="products-tabs__item products-tabs__item--out">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/1.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon"> \
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+                </div>
+
+                <!-- #BedRoom tab -->
+                <div id="BedRoom" class="products-tabs__content">
+
+                    <!-- 1 -->
+                    <div class="products-tabs__item products-tabs__item--sale products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/1.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="products-tabs__item products-tabs__item--out products-tabs__item--sale">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/2.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="products-tabs__item products-tabs__item--sale products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/3.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="products-tabs__item products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/4.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="products-tabs__item products-tabs__item--sale">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/5.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-30%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="products-tabs__item products-tabs__item--out">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/6.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon"> \
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+                </div>
+
+                <!-- #BathRoom tab -->
+                <div id="BathRoom" class="products-tabs__content">
+
+                    <!-- 1 -->
+                    <div class="products-tabs__item products-tabs__item--sale products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/5.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="products-tabs__item products-tabs__item--out products-tabs__item--sale">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/3.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="products-tabs__item products-tabs__item--sale products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/1.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="products-tabs__item products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/6.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="products-tabs__item products-tabs__item--sale">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/5.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-30%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="products-tabs__item products-tabs__item--out">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/4.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon"> \
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+                </div>
+
+                <!-- Decorations tab -->
+                <div id="Decorations" class="products-tabs__content">
+
+                    <!-- 1 -->
+                    <div class="products-tabs__item products-tabs__item--sale products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/1.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="products-tabs__item products-tabs__item--out products-tabs__item--sale">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/2.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="products-tabs__item products-tabs__item--sale products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/3.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="products-tabs__item products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/4.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="products-tabs__item products-tabs__item--sale">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/5.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-30%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="products-tabs__item products-tabs__item--out">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/6.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon"> \
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+                </div>
+
+                <!-- Keramics tab -->
+                <div id="Keramics" class="products-tabs__content">
+
+                    <!-- 1 -->
+                    <div class="products-tabs__item products-tabs__item--sale products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/6.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="products-tabs__item products-tabs__item--out products-tabs__item--sale">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/4.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="products-tabs__item products-tabs__item--sale products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/3.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="products-tabs__item products-tabs__item--new">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/2.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="products-tabs__item products-tabs__item--sale">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/5.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-30%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="products-tabs__item products-tabs__item--out">
+                        <div class="products-tabs__img-box">
+                            <img src="images/product/1.png" alt="product img" class="products-tabs__img">
+                            <div class="products-tabs__link-box">
+                                <button class="products-tabs__link">
+                                    <img src="images/icons/zoom.svg" alt="zoom icon">
+                                </button>
+                                <button class="products-tabs__link" type="button">
+                                    <img src="images/icons/stat.svg" alt="stat icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/like.svg" alt="like icon">
+                                    <img class="products-tabs__added" src="images/icons/like-added.svg" alt="like icon">
+                                </button>
+                                <button class="products-tabs__link">
+                                    <img class="products-tabs__no-added" src="images/icons/item-cart.svg"
+                                        alt="cart icon">
+                                    <img class="products-tabs__added" src="images/icons/cart.svg" alt="cart icon"> \
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-tabs__out">Out of stoke</div>
+                        <div class="products-tabs__sale">-20%</div>
+                        <div class="products-tabs__title">Single Sofa</div>
+                        <div class="products-tabs__price">£423.00</div>
+                        <div class="products-tabs__star" data-rateyo-rating="4"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="trend" style="background-image: url(images/trend-bg.jpg);">
+        <div class="container">
+            <div class="trend__content">
+                <h2 class="trend__headline wow animate__fadeIn">50% OFF</h2>
+                <h3 class="title trend__title wow animate__fadeIn">Weekend Trendy Sofa</h3>
+                <p class="text trend__text wow animate__fadeIn">Contrary to popular belief, Lorem Ipsum is not simply random text.
+                    literature from 45 BC, making it over 2000 years old.
+                    Richard McClintock, a Latin.</p>
+                <button class="trend__btn wow animate__fadeIn">View Items</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="blog">
+        <div class="container">
+
+            <!-- blog item 1 -->
+            <article class="blog-item">
+                <div class="blog-item__figure">
+                    <img class="blog-item__img" src="images/blog/1.jpg" alt="blog img 1">
+                    <figcaption class="blog-item__img-caption wow animate__fadeIn">Living</figcaption>
+                </div>
+                <div class="blog-item__inner">
+                    <h3 class="title blog-item__title wow animate__fadeInRightBig">Living Room Items</h3>
+                    <p class="text blog-item__text wow animate__fadeInRightBig">Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It has roots in a piece of classical Latin literature
+                        from 45 professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
+                        words, consectetur.</p>
+                    <button class="blog-item__btn wow animate__fadeIn">Read More</button>
+                </div>
+            </article>
+
+            <!-- blog item 2 -->
+            <article class="blog-item">
+                <div class="blog-item__inner">
+                    <h3 class="title blog-item__title wow animate__fadeInLeftBig">Trendy Dining Table</h3>
+                    <p class="text blog-item__text wow animate__fadeInLeftBig">Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        literature from 45 BC, making it over 2000 years old.
+                        Richard McClintock, a Latin.</p>
+                    <button class="blog-item__btn wow animate__fadeIn">View Items</button>
+                </div>
+                <div class="blog-item__figure blog-item__figure-right">
+                    <img class="blog-item__img" src="images/blog/2.jpg" alt="blog img 1">
+                    <figcaption class="blog-item__img-caption wow animate__fadeIn">Dining</figcaption>
+                </div>
+            </article>
+
+            <!-- blog item 3 -->
+            <article class="blog-item">
+                <div class="blog-item__figure">
+                    <img class="blog-item__img" src="images/blog/3.jpg" alt="blog img 1">
+                    <figcaption class="blog-item__img-caption wow animate__fadeIn">Bed</figcaption>
+                </div>
+                <div class="blog-item__inner">
+                    <h3 class="title blog-item__title wow animate__fadeInRightBig">Modern Bed</h3>
+                    <p class="text blog-item__text wow animate__fadeInRightBig">Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        literature from 45 BC, making it over 2000 years old.
+                        Richard McClintock, a Latin.</p>
+                    <button class="blog-item__btn wow animate__fadeIn">View Items</button>
+                </div>
+            </article>
+
+            <!-- blog item 4 -->
+            <article class="blog-item">
+                <div class="blog-item__inner">
+                    <h3 class="title blog-item__title wow animate__fadeInLeftBig">Populer kitchen Items</h3>
+                    <p class="text blog-item__text wow animate__fadeInLeftBig">Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        literature from 45 BC, making it over 2000 years old.
+                        Richard McClintock, a Latin.</p>
+                    <button class="blog-item__btn wow animate__fadeIn">View Items</button>
+                </div>
+                <div class="blog-item__figure blog-item__figure-right">
+                    <img class="blog-item__img" src="images/blog/4.jpg" alt="blog img 1">
+                    <figcaption class="blog-item__img-caption wow animate__fadeIn">Living</figcaption>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <section class="promo">
+        <div class="container">
+            <div class="promo__content">
+                <h3 class="title promo__title">Get 30% Off</h3>
+                <p class="text promo__text">Contrary to popular belief, Lorem Ipsum is not simply years old. Richard
+                    McClintock, a Latin.</p>
+                <div class="promo__email">
+                    <input class="promo__input" type="email" placeholder="Enter Your Email">
+                    <button class="promo__btn" type="submit">Subscrive</button>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+
+                <div class="footer__col">
+                    <a href="#" class="footer__logo">
+                        <img src="images/icons/logo.svg" alt="greenery logo">
+                    </a>
+                    <blockquote class="footer__blockquote">
+                        Contrary to popular belief, Lorem Ipsum is not simply years old Latin.
+                    </blockquote>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.4834 0C3.34544 0 -0.00976562 3.3756 -0.00976562 7.53871C-0.00976562 11.3182 2.75781 14.4392 6.36317 14.9843V9.53647H4.50919V7.55495H6.36317V6.23625C6.36317 4.05322 7.42028 3.09522 9.22383 3.09522C10.0873 3.09522 10.5446 3.15988 10.7605 3.18887V4.91843H9.53047C8.76502 4.91843 8.49757 5.6491 8.49757 6.47198V7.55495H10.7412L10.4371 9.53647H8.49757V15C12.1548 14.5013 14.9766 11.3553 14.9766 7.53871C14.9766 3.3756 11.6216 0 7.4834 0Z"
+                                    fill="#3A5B62" />
+                            </svg>
+
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 14 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.73268 0C2.64444 0 0.945312 1.70168 0.945312 3.79234V9.20867C0.945312 11.2991 2.64544 13 4.7342 13H10.1456C12.2341 13 13.9335 11.2983 13.9335 9.20766V3.79082C13.9335 1.70068 12.2333 0 10.1446 0H4.73268ZM11.3358 2.08C11.6226 2.08 11.8554 2.31296 11.8554 2.6C11.8554 2.88704 11.6226 3.12 11.3358 3.12C11.0491 3.12 10.8163 2.88704 10.8163 2.6C10.8163 2.31296 11.0491 2.08 11.3358 2.08ZM7.43939 3.12C9.30189 3.12 10.8163 4.6358 10.8163 6.5C10.8163 8.3642 9.30163 9.88 7.43939 9.88C5.57689 9.88 4.06247 8.36394 4.06247 6.5C4.06247 4.63606 5.57689 3.12 7.43939 3.12ZM7.43939 4.16C6.14811 4.16 5.10152 5.20754 5.10152 6.5C5.10152 7.79246 6.14811 8.84 7.43939 8.84C8.73067 8.84 9.77725 7.79246 9.77725 6.5C9.77725 5.20754 8.73067 4.16 7.43939 4.16Z"
+                                    fill="#3A5B62" />
+                            </svg>
+
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 19 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.8859 1.77359C18.2249 2.07685 17.5142 2.27902 16.7644 2.37457C17.5268 1.90598 18.1131 1.15859 18.3884 0.275544C17.6751 0.708587 16.885 1.02652 16.0442 1.19413C15.3728 0.457174 14.4152 0 13.3542 0C11.3161 0 9.66441 1.69565 9.66441 3.7862C9.66441 4.08196 9.69779 4.37022 9.76078 4.65C6.69481 4.49054 3.97556 2.98141 2.15632 0.690978C1.83668 1.25054 1.65687 1.90598 1.65687 2.59761C1.65687 3.91207 2.30684 5.06902 3.29787 5.75087C2.69292 5.73163 2.12357 5.5575 1.62506 5.27804C1.62506 5.28946 1.62506 5.30641 1.62506 5.32239C1.62506 7.15924 2.8973 8.68859 4.58365 9.03685C4.27535 9.12424 3.94973 9.17283 3.61404 9.17283C3.37565 9.17283 3.14356 9.14478 2.91872 9.10304C3.38825 10.604 4.75055 11.7013 6.36447 11.7336C5.10168 12.7474 3.51138 13.3546 1.78189 13.3546C1.48304 13.3546 1.19112 13.337 0.902344 13.3008C2.53578 14.372 4.47595 15 6.55845 15C13.3445 15 17.0566 9.22957 17.0566 4.2238C17.0566 4.05978 17.0516 3.89641 17.044 3.735C17.7686 3.20544 18.3928 2.53696 18.8859 1.77359Z"
+                                    fill="#3A5B62" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 20 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.3122 2.23438C19.1367 1.34094 18.3006 0.690308 17.3303 0.487183C15.8783 0.203125 13.1911 0 10.2836 0C7.3779 0 4.64765 0.203125 3.19393 0.487183C2.22536 0.690308 1.38753 1.29968 1.21205 2.23438C1.03485 3.25 0.859375 4.67188 0.859375 6.5C0.859375 8.32812 1.03485 9.75 1.25506 10.7656C1.43226 11.6591 2.26837 12.3097 3.23694 12.5128C4.7784 12.7969 7.42091 13 10.3284 13C13.2358 13 15.8783 12.7969 17.4198 12.5128C18.3883 12.3097 19.2244 11.7003 19.4016 10.7656C19.5771 9.75 19.7973 8.28687 19.8421 6.5C19.7526 4.67188 19.5324 3.25 19.3122 2.23438ZM7.90605 9.34375V3.65625L13.2788 6.5L7.90605 9.34375Z"
+                                    fill="#3A5B62" />
+                            </svg>
+
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__col footer__explore">
+                    <h5 class="footer__title">
+                        Explore
+                    </h5>
+                    <ul class="explore__list">
+                        <li class="explore__item">
+                            <a href="#" class="explore__link">About Us</a>
+                        </li>
+                        <li class="explore__item">
+                            <a href="#" class="explore__link">Survices</a>
+                        </li>
+                        <li class="explore__item">
+                            <a href="#" class="explore__link">Our Team</a>
+                        </li>
+                        <li class="explore__item">
+                            <a href="#" class="explore__link">Trendy</a>
+                        </li>
+                        <li class="explore__item">
+                            <a href="#" class="explore__link">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__col footer__contacts">
+                    <h5 class="footer__title">
+                        Contact Us
+                    </h5>
+
+                    <address class="contacts__list">
+                            <p class="contacts__item contacts__address">45 Tooring High SL London SA17 <br> United kingdoom</p>
+                            <a href="tel:018123456789" class="contacts__item contacts__tel" type="">018123456789</a>
+                            <a href="mailto: petroger456@gmail.com" class="contacts__item contacts__email">petroger456@gmail.com</a>
+                    </address>
+                </div>
+
+                <div class="footer__col footer__schedule">
+                    <h5 class="footer__title">
+                        Survice Hours
+                    </h5>
+                    <div class="timetable">
+                        <div class="timetable__item timetable__days">Mon-Fri</div>
+                        <div class="timetable__item timetable__hours">09.00am - 19.00pm</div>
+                        <div class="timetable__item timetable__days">Saturday</div>
+                        <div class="timetable__item timetable__hours">10.00am - 18.00pm</div>
+                        <div class="timetable__item timetable__days">Sunday</div>
+                        <div class="timetable__item timetable__hours">We are Closed</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">©2021 Greenery. All Right Reserved</div>
+    </footer>
+
+    <script src="js/wow.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 

@@ -5,13 +5,14 @@ body {
 
 body {
     color: $text;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 172.682%; /* 25.902px */
     letter-spacing: 0.675px;
 }
 
 a {
     @extend %Mukta-400;
+    color: $text;
 }
 
 .container {
@@ -27,4 +28,11 @@ a {
     font-size: 46px;
     line-height: 133.5%; /* 61.41px */
     letter-spacing: 2.07px;
+}
+
+.text {
+    @extend %Mukta-400;
+    color: $text;
+    margin: 0 auto;
+    text-align: center;
 }
